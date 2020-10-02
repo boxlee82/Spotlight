@@ -1,0 +1,17 @@
+C:\Users\BoxLee\source\repos\MouseSpotlight\MouseSpotlight\bin\Debug\MouseSpotlight.exe.config
+C:\Users\BoxLee\source\repos\MouseSpotlight\MouseSpotlight\bin\Debug\MouseSpotlight.exe
+C:\Users\BoxLee\source\repos\MouseSpotlight\MouseSpotlight\bin\Debug\MouseSpotlight.pdb
+C:\Users\BoxLee\source\repos\MouseSpotlight\MouseSpotlight\obj\Debug\MouseSpotlight.Properties.Resources.resources
+C:\Users\BoxLee\source\repos\MouseSpotlight\MouseSpotlight\obj\Debug\MouseSpotlight.csproj.GenerateResource.cache
+C:\Users\BoxLee\source\repos\MouseSpotlight\MouseSpotlight\obj\Debug\MouseSpotlight.csproj.CoreCompileInputs.cache
+C:\Users\BoxLee\source\repos\MouseSpotlight\MouseSpotlight\obj\Debug\MouseSpotlight.exe
+C:\Users\BoxLee\source\repos\MouseSpotlight\MouseSpotlight\obj\Debug\MouseSpotlight.pdb
+C:\Users\BoxLee\source\repos\MouseSpotlight\MouseSpotlight\obj\Debug\MouseSpotlight.FormMain.resources
+C:\Users\BoxLee\source\repos\MouseSpotlight\MouseSpotlight\obj\Debug\MouseSpotlight.FormDraw.resources
+C:\Users\BoxLee\source\repos\MouseSpotlight\MouseSpotlight\obj\Debug\MouseSpotlight.FormScreenshot.resources
+C:\Users\BoxLee\source\repos\MouseSpotlight\MouseSpotlight\bin\Debug\MouseSpotlight.exe.manifest
+C:\Users\BoxLee\source\repos\MouseSpotlight\MouseSpotlight\bin\Debug\MouseSpotlight.application
+C:\Users\BoxLee\source\repos\MouseSpotlight\MouseSpotlight\obj\Debug\MouseSpotlight.TrustInfo.xml
+C:\Users\BoxLee\source\repos\MouseSpotlight\MouseSpotlight\obj\Debug\MouseSpotlight.exe.manifest
+C:\Users\BoxLee\source\repos\MouseSpotlight\MouseSpotlight\obj\Debug\MouseSpotlight.application
+C:\Users\BoxLee\source\repos\MouseSpotlight\MouseSpotlight\obj\Debug\MouseSpotlight.csprojAssemblyReference.cache
