@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MouseSpotlight.exe" size="1102336">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MouseSpotlight.exe" size="1103872">
       <assemblyIdentity name="MouseSpotlight" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>ivaf8ZHgTLDfQyUALohhd7m7CZfER38+XQlIvxNOFs0=</dsig:DigestValue>
+        <dsig:DigestValue>5IFPzdH777b8+jZZgUIBHe6GM+iobOBucQa0Oi9i7qk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -97,9 +97,13 @@ namespace MouseSpotlight
 
         private void hook_KeyDown(object sender, KeyEventArgs e)
         {
-            
+            if (this.Visible == true)
+            {
+                // 拦截
+                e.SuppressKeyPress = true;
+            }
 
-            textBoxKey.Text = (e.KeyData).ToString();
+            // textBoxKey.Text = (e.KeyData).ToString();
 
             if ((e.KeyData == Keys.Apps) || (e.KeyData == Keys.Escape))
             {
@@ -119,6 +123,11 @@ namespace MouseSpotlight
                     this.Show();
                     fd.Show();
                 }
+            }
+            else if ((e.KeyData == Keys.F10))
+            {
+                // 全屏截图　        
+                this.ScreenCapture();
             }
             else if (e.KeyData == Keys.BrowserHome)
             {
@@ -205,13 +214,8 @@ namespace MouseSpotlight
             //             
             else
             {
-
-            }
-
-            if (this.Visible == true)
-            {
-                // 拦截
-                e.SuppressKeyPress = true;
+                // 不拦截
+                e.SuppressKeyPress = false;
             }
         }
 
@@ -257,7 +261,7 @@ namespace MouseSpotlight
 
         private void contextMenuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
-            this.Close();
+
         }
 
         private void notifyIcon1_Click(object sender, EventArgs e)
@@ -268,6 +272,35 @@ namespace MouseSpotlight
         private void notifyIcon1_DoubleClick(object sender, EventArgs e)
         {
 
+        }
+
+        private void ScreenCapture()
+        {
+            string filename = "screen_" + String.Format("{0:yyyyMd_HHmmss}", DateTime.Now) + ".png"; 
+
+            Bitmap bit = new Bitmap(Screen.PrimaryScreen.Bounds.Width, Screen.PrimaryScreen.Bounds.Height);
+            Graphics g = Graphics.FromImage(bit);
+            g.CopyFromScreen(0, 0, 0, 0, bit.Size);
+            bit.Save(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\" + filename);
+            IntPtr Hdc = g.GetHdc();
+            g.ReleaseHdc(Hdc);
+
+            notifyIcon1.ShowBalloonTip(5000, "提示", "屏幕截图完成，保存到桌面 " + filename, ToolTipIcon.Info);
+        }
+
+        private void MenuItemScreenCapture_Click(object sender, EventArgs e)
+        {
+            this.ScreenCapture();
+        }
+
+        private void MenuItemClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void MenuItemHelp_Click(object sender, EventArgs e)
+        {
+            notifyIcon1.ShowBalloonTip(5000, "提示", "ESC - 唤醒/退出\n鼠标左键 - 聚光灯\n鼠标右键 - 画笔\n音量减 - 区域截图\n音量加 - 显示截图\nF10 - 全屏截图\n浏览器主页 - 退出程序", ToolTipIcon.Info);
         }
 
     }

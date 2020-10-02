@@ -35,7 +35,10 @@
             this.pictureBoxSpotlight = new System.Windows.Forms.PictureBox();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.MenuItemScreenCapture = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.MenuItemClose = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuItemHelp = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSpotlight)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -86,16 +89,39 @@
             // 
             this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.MenuItemHelp,
+            this.MenuItemScreenCapture,
+            this.toolStripSeparator1,
             this.MenuItemClose});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(117, 32);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(241, 127);
             this.contextMenuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.contextMenuStrip1_ItemClicked);
+            // 
+            // MenuItemScreenCapture
+            // 
+            this.MenuItemScreenCapture.Name = "MenuItemScreenCapture";
+            this.MenuItemScreenCapture.Size = new System.Drawing.Size(240, 28);
+            this.MenuItemScreenCapture.Text = "屏幕截图";
+            this.MenuItemScreenCapture.Click += new System.EventHandler(this.MenuItemScreenCapture_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(237, 6);
             // 
             // MenuItemClose
             // 
             this.MenuItemClose.Name = "MenuItemClose";
-            this.MenuItemClose.Size = new System.Drawing.Size(116, 28);
+            this.MenuItemClose.Size = new System.Drawing.Size(240, 28);
             this.MenuItemClose.Text = "退出";
+            this.MenuItemClose.Click += new System.EventHandler(this.MenuItemClose_Click);
+            // 
+            // MenuItemHelp
+            // 
+            this.MenuItemHelp.Name = "MenuItemHelp";
+            this.MenuItemHelp.Size = new System.Drawing.Size(240, 28);
+            this.MenuItemHelp.Text = "使用帮助";
+            this.MenuItemHelp.Click += new System.EventHandler(this.MenuItemHelp_Click);
             // 
             // FormMain
             // 
@@ -133,6 +159,9 @@
         private System.Windows.Forms.NotifyIcon notifyIcon1;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem MenuItemClose;
+        private System.Windows.Forms.ToolStripMenuItem MenuItemScreenCapture;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem MenuItemHelp;
     }
 }
 
